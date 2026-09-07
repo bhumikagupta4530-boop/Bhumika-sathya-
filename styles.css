@@ -139,6 +139,22 @@ body {
   letter-spacing: -0.02em;
 }
 
+.brand-logo-img {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  border: 2px solid rgba(255, 255, 255, 0.8);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+  flex-shrink: 0;
+}
+
+.brand-logo:hover .brand-logo-img {
+  transform: scale(1.08) rotate(3deg);
+  box-shadow: 0 6px 18px rgba(46, 125, 82, 0.35);
+}
+
 .brand-icon {
   width: 28px;
   height: 28px;
@@ -284,6 +300,50 @@ body {
   padding: 60px 0 40px;
   text-align: center;
   position: relative;
+}
+
+.hero-logo-banner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 22px;
+}
+
+.hero-logo-img {
+  width: 110px;
+  height: 110px;
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25), 0 0 40px rgba(52, 211, 153, 0.2);
+  border: 3px solid rgba(255, 255, 255, 0.9);
+  transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.3s ease;
+  margin-bottom: 12px;
+}
+
+.hero-logo-img:hover {
+  transform: scale(1.06) rotate(2deg);
+  box-shadow: 0 14px 40px rgba(0, 0, 0, 0.35), 0 0 50px rgba(52, 211, 153, 0.4);
+}
+
+.hero-motto {
+  font-size: 0.9rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  color: var(--brand-forest);
+  text-transform: uppercase;
+}
+
+.stealth-mode .hero-motto {
+  color: #34D399;
+}
+
+.hero-submotto {
+  font-size: 0.725rem;
+  font-weight: 600;
+  letter-spacing: 0.16em;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  margin-top: 4px;
 }
 
 .hero-tag {
